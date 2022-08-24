@@ -100,4 +100,4 @@ Additional Practice
 * [K-fold cross validation](https://drsimonj.svbtle.com/k-fold-cross-validation-with-modelr-and-broom)
 * [Random partititioning/Monte Carlo approach to cross validation](https://ijlyttle.github.io/model_cv_selection.html)
 <!---* [Additional Cross Validation for Classification Models .Rmd File](./10_additional_cross_validate_logit.Rmd)--->
-](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/examples/)
+
