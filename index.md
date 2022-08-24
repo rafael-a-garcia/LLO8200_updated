@@ -1,7 +1,7 @@
 ## Data Science (LLO8200)
 This is the course website for LLO 8200, Introduction to Data Science. This site serves as a supplement to the 2VU LMS site. Make sure you bookmark and check this page frequently for the most up-to-date files to use for both async and problem sets. Over the course of the term code may be optimized or corrected. I will upload updated files here when that happens. You should have R, RStudio, and the tidyverse package installed and updated prior to the first day of class. Instructions for installing/updating R and Rstudio can be found [here](./Downloading Installing Updating R and RStudio.pdf).
 
-You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Hartigan/Garcia Summer 2022 LLO8200 Syllabus - 5/11/22](./Hartigan_Garcia_LLO8200_syllabus_summer2022.pdf). 
+You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [SYLLABUS](./). 
 
 If you want to set up email alerts for updates/additions to this site, you can use the free version of a third-party program: [Distill](https://distill.io/). The free version will check for updates every six hours and send you alerts. Note: this is a platform that is not owned by Vanderbilt or me and you should review their data privacy and security to ensure you are comfortable with their practices.
 
@@ -10,22 +10,26 @@ I will upload .Rmd files here in weeks that code has been optimized/updated. You
 
 *Note: To access and save RMD files from this site to your computer, access the link using: (Mac) ctrl+click or (PC) right click. Then click "save link as" and save to a folder on your computer (NOT the downloads folder).*
            
-LMS Mod 0 - [.Rmd Bootcamp File](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/00_Getting Started.Rmd), [Bootcamp knit lecture notes](./00_Getting-Started.html), [R Setup Slide Deck](./Intro to R_final.pptx)\
+LMS Mod 0 - [.Rmd Bootcamp File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/00_Getting Started.Rmd), [Bootcamp knit lecture notes](./00_Getting-Started.html), [R Setup Slide Deck](./Intro to R_final.pptx)\
 LMS Mod 1 - no updates \
 LMS Mod 2 - no updates \
-LMS Mod 3 - [Updated .Rmd file](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/Mod3_webscraping_updated.Rmd)\
+LMS Mod 3 - [Updated .Rmd file | 08/22/22](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/Mod3_webscraping_updated.Rmd)\
 LMS Mod 4 - no updates \
 LMS Mod 5 - no updates \
-LMS Mod 6 - [Updated .Rmd file (updates to code starting on line 244 - final code chunk)](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/Mod6_regression_updated_inclass.Rmd)\
-LMS Mod 7 - [Updated .Rmd file (updates to code loading data - line 28)](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/Mod6b_regression_part2.Rmd)\
+LMS Mod 6 - [Updated .Rmd file | 08/22/22 (updates to code starting on line 244 - final code chunk)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/Mod6_regression_updated_inclass.Rmd)\
+LMS Mod 7 - [Updated .Rmd file | 08/22/22 (updates to code loading data - line 28)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/Mod6b_regression_part2.Rmd)\
 LMS Mod 8 - no code updates [Slide deck - Interpreting Logisitic Regression Coefficients (updated to add intercept interpretation)](.\LogisticRegression_Interpreting Estimates.pptx)\
+<!--- These need to be added to the dataset repository next term  --->
 
 ### Datasets for the Semester     
 *these are all available on the LMS - if we need to add any this term, I'll put them here*  
 [LMS Mod 6 - area dataset](./area_data.Rdata)\
 [PS4 - CVDD dataset](./cvdd.rdata)
+<!--- These need to be added to the dataset repository next term --->
 
 ### Problem Sets
+
+
 Each problem set should be uploaded to the LMS _before_ we meet for live session on the given due date. All submissions must include two files to receive credit:
 1. .Rmd code file.
 2. "Knit" file. The knit file can be in pdf or html (pdf is preferred). Word docs will NOT be accepted. 
@@ -36,21 +40,21 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 
 *Note: To access and save RMD files from this site to your computer, access the link using: (Mac) ctrl+click or (PC) right click. Then click "save link as" and save to a folder on your computer (NOT the downloads folder).*
 
-| File(s)      | Due Date          |
-|:-------------|:------------------|
-| [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./01_ProblemSet_Mods1_2_3_starter.pdf) | 06/01/22 |
-| [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/02_ProblemSet_Mods2_3_starter.Rmd); [Problem Set 2 pdf](./02_ProblemSet_Mods2_3_starter.pdf) | 06/15/22 |
-| [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/03_ProblemSet_starter.Rmd); [Problem Set 3 pdf](./03_ProblemSet_starter.pdf) | 06/29/22 |
-| [Problem Set 4 .Rmd File](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/04_ProblemSet_Mod8_starter_updated.Rmd); [Problem Set 4 pdf](./04_ProblemSet_Mod8_starter_updated.pdf) | 07/20/22 |
-| [Problem Set 5 placeholder] | 08/10/22 |
+| File(s)      | Due Date Section 61 | Due Date Section 60 |
+|:-------------|:--------------------|:--------------------|
+| [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./01_ProblemSet_Mods1_2_3_starter.pdf) | Section 61: 09/14/22 |Section 60: 09/15/22 |
+| [Problem Set 2 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/02_ProblemSet_Mods2_3_starter.Rmd)--->; [Problem Set 2 placeholder]<!---(./02_ProblemSet_Mods2_3_starter.pdf)---> | Section 61: 09/28/22 |Section 60: 09/29/22 |
+| [Problem Set 3 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/03_ProblemSet_starter.Rmd)--->; [Problem Set 3 placeholder]<!---(./03_ProblemSet_starter.pdf)---> | Section 61: 10/XX/22 |Section 60: 10/XX/22 |
+| [Problem Set 4 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/04_ProblemSet_Mod8_starter_updated.Rmd)--->; [Problem Set 4 placeholder]<!---(./04_ProblemSet_Mod8_starter_updated.pdf)---> Section 61: 11/09/22 |Section 60: 11/10/22 |
+| [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: 12/07/22 |Section 60: 12/08/22 |
 
 ### Final Project Materials
 * [Final Project Expectations](./Expectations for final presentation and report.pdf) 
-* [Final Project Rubrics](./Final Project Grader Report.pdf) - final products due 08/12/22
-* [Progress Report 1 Instructions](./Progress Report 1 - Instructions.pdf) - due 06/08/22
-* [Progress Report 2 Instructions](./Progress Report 2 - Instructions.pdf) - due 07/06/22
-* [Progress Report 3 Instructions](./Progress Report 3 - Instructions.pdf) - due 07/27/22
-* [Tips to help with Final Report .Rmd file](https://raw.githubusercontent.com/lhartigan15/LLO8200_updated/main/TipsToHelpWithFinalReport.Rmd); [associated knit PDF](./TipsToHelpWithFinalReport.pdf)
+* [Final Project Rubrics](./Final Project Grader Report.pdf) - final products due Both Sections: 12/16/22 (by midnight Pacific Time)
+* [Progress Report 1 Instructions](./Progress Report 1 - Instructions.pdf) - due Section 61: 09/14/22 / Section 60: 09/15/22
+* [Progress Report 2 Instructions]<!---(./Progress Report 2 - Instructions.pdf)---> - due Section 61: 10/19/22 / Section 60: 10/20/22
+* [Progress Report 3 Instructions]<!---(./Progress Report 3 - Instructions.pdf)---> - due Section 61: 11/16/22 / Section 60: 11/17/22
+* [Tips to help with Final Report .Rmd file](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/TipsToHelpWithFinalReport.Rmd); [associated knit PDF](./TipsToHelpWithFinalReport.pdf)
 
 #### Final Project Examples
 Note: these are all strong examples; but that doesn't mean they are all perfect. You should reference the supplied rubrics to ensure you're meeting all expectations. 
@@ -72,7 +76,7 @@ YAML headers: Sometimes, when you download an .Rmd file from a website, the YAML
 
 ![YAML header](./YAML_header.JPG)
 
-Training & Testing & Workflows, OH MY! To help picture the workflow process we use to provide structure to our model-building-processes, Dr. Garcia drafted this excellent graphic. This will be useful for Modules 5, on. 
+Training & Testing & Workflows, OH MY! To help picture the workflow process we use to provide structure to our model-building-processes. I drafted this graphic. It will be useful for Modules 5, on. 
 
 ![Workflow Graphic](./Workflow Chart Lesson 5.png)
 
