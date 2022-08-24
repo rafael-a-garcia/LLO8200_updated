@@ -1,4 +1,4 @@
-## Data Science (LLO8200)
+[## Data Science (LLO8200)
 This is the course website for LLO 8200, Introduction to Data Science. This site serves as a supplement to the 2VU LMS site. Make sure you bookmark and check this page frequently for the most up-to-date files to use for both async and problem sets. Over the course of the term code may be optimized or corrected. I will upload updated files here when that happens. You should have R, RStudio, and the tidyverse package installed and updated prior to the first day of class. Instructions for installing/updating R and Rstudio can be found [here](./refs/Downloading Installing Updating R and RStudio.pdf).
 
 You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Garcia_LLO8200_syllabus_fall2022](./Garcia_LLO8200_syllabus_fall2022.pdf). 
@@ -40,13 +40,13 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 
 *Note: To access and save RMD files from this site to your computer, access the link using: (Mac) ctrl+click or (PC) right click. Then click "save link as" and save to a folder on your computer (NOT the downloads folder).*
 
-| File(s)      | Due Date Section 61 | Due Date Section 60 |
+| File(s)      | Due Date Section    |                     |
 |:-------------|:--------------------|:--------------------|
 | [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 61: 09/14/22 |Section 60: 09/15/22 |
 | [Problem Set 2 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Mods2_3_starter.Rmd)--->; [Problem Set 2 placeholder]<!---(./problem-sets/02_ProblemSet_Mods2_3_starter.pdf)---> | Section 61: 09/28/22 |Section 60: 09/29/22 |
 | [Problem Set 3 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd)--->; [Problem Set 3 placeholder]<!---(./problem-sets/03_ProblemSet_starter.pdf)---> | Section 61: 10/XX/22 |Section 60: 10/XX/22 |
 | [Problem Set 4 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/04_ProblemSet_Mod8_starter_updated.Rmd)--->; [Problem Set 4 placeholder]<!---(./problem-sets/04_ProblemSet_Mod8_starter_updated.pdf)---> Section 61: 11/09/22 |Section 60: 11/10/22 |
-| [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: 12/07/22 |Section 60: 12/08/22 |
+| [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: 12/07/22 | Section 60: 12/08/22 |
 
 ### Final Project Materials
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
@@ -100,3 +100,4 @@ Additional Practice
 * [K-fold cross validation](https://drsimonj.svbtle.com/k-fold-cross-validation-with-modelr-and-broom)
 * [Random partititioning/Monte Carlo approach to cross validation](https://ijlyttle.github.io/model_cv_selection.html)
 <!---* [Additional Cross Validation for Classification Models .Rmd File](./10_additional_cross_validate_logit.Rmd)--->
+](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/examples/)
