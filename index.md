@@ -44,7 +44,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 |:-------------|:--------------------|:--------------------|
 | [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 61: 09/14/22 |Section 60: 09/15/22 |
 | [Problem Set 2 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Mods2_3_starter.Rmd)--->; [Problem Set 2 placeholder]<!---(./problem-sets/02_ProblemSet_Mods2_3_starter.pdf)---> | Section 61: 09/28/22 |Section 60: 09/29/22 |
-| [Problem Set 3 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd)--->; [Problem Set 3 placeholder]<!---(./problem-sets/03_ProblemSet_starter.pdf)---> | Section 61: 10/XX/22 |Section 60: 10/XX/22 |
+| [Problem Set 3 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd)--->; [Problem Set 3 placeholder]<!---(./problem-sets/03_ProblemSet_starter.pdf)---> | Section 61: 10/19/22 |Section 60: 10/20/22 |
 | [Problem Set 4 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/04_ProblemSet_Mod8_starter_updated.Rmd)--->; [Problem Set 4 placeholder]<!---(./problem-sets/04_ProblemSet_Mod8_starter_updated.pdf)---> Section 61: 11/09/22 |Section 60: 11/10/22 |
 | [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: 12/07/22 | Section 60: 12/08/22 |
 
@@ -52,7 +52,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
 * [Final Project Rubrics](./final-project/Final Project Grader Report.pdf) - final products due Both Sections: 12/16/22 (by midnight Pacific Time)
 * [Progress Report 1 Instructions](./final-project/Progress Report 1 - Instructions.pdf) - due Section 61: 09/14/22 / Section 60: 09/15/22
-* [Progress Report 2 Instructions]<!---(./final-project/Progress Report 2 - Instructions.pdf)---> - due Section 61: 10/19/22 / Section 60: 10/20/22
+* [Progress Report 2 Instructions]<!---(./final-project/Progress Report 2 - Instructions.pdf)---> - due Section 61: 10/26/22 / Section 60: 10/27/22
 * [Progress Report 3 Instructions]<!---(./final-project/Progress Report 3 - Instructions.pdf)---> - due Section 61: 11/16/22 / Section 60: 11/17/22
 * [Tips to help with Final Report .Rmd file](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/final-project/TipsToHelpWithFinalReport.Rmd); [associated knit PDF](./final-project/TipsToHelpWithFinalReport.pdf)
 
