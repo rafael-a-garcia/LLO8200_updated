@@ -52,7 +52,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
 * [Final Project Rubrics](./final-project/Final Project Grader Report.pdf) - final products due Both Sections: 12/16/22 (by midnight Pacific Time)
 * [Progress Report 1 Instructions](./final-project/Progress Report 1 - Instructions.pdf) - due Section 61: 09/21/22 / Section 60: 09/22/22
-* [Progress Report 2 Instructions]<!---(./final-project/Progress Report 2 - Instructions.pdf)---> - due Section 61: 10/26/22 / Section 60: 10/27/22
+* [Progress Report 2 Instructions](./final-project/Progress Report 2 - Instructions.pdf) - due Section 61: 10/26/22 / Section 60: 10/27/22
 * [Progress Report 3 Instructions]<!---(./final-project/Progress Report 3 - Instructions.pdf)---> - due Section 61: 11/16/22 / Section 60: 11/17/22
 * [Tips to help with Final Report .Rmd file](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/final-project/TipsToHelpWithFinalReport.Rmd); [associated knit PDF](./final-project/TipsToHelpWithFinalReport.pdf)
 
