@@ -44,7 +44,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 |:-------------|:--------------------|:--------------------|
 | [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 61: 09/14/22 |Section 60: 09/15/22 |
 | [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Mods2_3_starter.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Mods2_3_starter.pdf) | Section 61: 09/28/22 |Section 60: 09/29/22 |
-| [Problem Set 3 placeholder](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd); [Problem Set 3 placeholder](./problem-sets/03_ProblemSet_starter.pdf) | Section 61: 10/19/22 |Section 60: 10/20/22 |
+| [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd); [Problem Set 3 pdf](./problem-sets/03_ProblemSet_starter.pdf) | Section 61: 10/19/22 |Section 60: 10/20/22 |
 | [Problem Set 4 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/04_ProblemSet_Mod8_starter_updated.Rmd)--->; [Problem Set 4 placeholder]<!---(./problem-sets/04_ProblemSet_Mod8_starter_updated.pdf)---> | Section 61: 11/09/22 |Section 60: 11/10/22 |
 | [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: 12/07/22 |Section 60: 12/08/22 |
 
