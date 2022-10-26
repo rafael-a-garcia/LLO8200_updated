@@ -18,11 +18,11 @@ LMS Mod 4 - no updates \
 LMS Mod 5 - no updates \
 LMS Mod 6 - [Updated .Rmd file | 08/22/22 (updates to code starting on line 244 - final code chunk)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6_regression_updated_inclass.Rmd)\
 LMS Mod 7 - [Updated .Rmd file | 08/22/22 (updates to code loading data - line 28)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6b_regression_part2.Rmd)\
-LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - Classifiers.pdf)\
-* Watch 8.1 on 2VU \
-* Playlist for Module 8 can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g) \
-* Chapter 4 of Numbersense [Read via Vanderbilt Library](https://catalog.library.vanderbilt.edu/view/action/uresolver.do?operation=resolveService&package_service_id=31085101990003276&institutionId=3276&customerId=3275&VE=true) \
-* Read main post and look over comments of [Andrew Gelman's Blog Post](https://statmodeling.stat.columbia.edu/2018/06/21/answering-question-predictors-important-going-beyond-p-value-thresholding-ranking/) \
+LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - Classifiers.pdf)
+* Watch 8.1 on 2VU 
+* Playlist for Module 8 can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g) 
+* Chapter 4 of Numbersense [Read via Vanderbilt Library](https://catalog.library.vanderbilt.edu/view/action/uresolver.do?operation=resolveService&package_service_id=31085101990003276&institutionId=3276&customerId=3275&VE=true) 
+* Read main post and look over comments of [Andrew Gelman's Blog Post](https://statmodeling.stat.columbia.edu/2018/06/21/answering-question-predictors-important-going-beyond-p-value-thresholding-ranking/) 
 <!--- These need to be added to the dataset repository next term  --->
 
 ### Datasets for the Semester     
