@@ -3,6 +3,8 @@ This is the course website for LLO 8200, Introduction to Data Science. This site
 
 You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Garcia_LLO8200_syllabus_fall2022](./Garcia_LLO8200_syllabus_fall2022.pdf). 
 
+*
+
 If you want to set up email alerts for updates/additions to this site, you can use the free version of a third-party program: [Distill](https://distill.io/). The free version will check for updates every six hours and send you alerts. Note: this is a platform that is not owned by Vanderbilt or me and you should review their data privacy and security to ensure you are comfortable with their practices.
 
 ### Async/Sync RStudio (.Rmd) Files
@@ -22,7 +24,16 @@ LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - C
 * Watch 8.1 on 2VU 
 * Playlist for Module 8 can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g) 
 * Chapter 4 of Numbersense [Read via Vanderbilt Library](https://catalog.library.vanderbilt.edu/view/action/uresolver.do?operation=resolveService&package_service_id=31085101990003276&institutionId=3276&customerId=3275&VE=true) 
-* Read main post and look over comments of [Andrew Gelman's Blog Post](https://statmodeling.stat.columbia.edu/2018/06/21/answering-question-predictors-important-going-beyond-p-value-thresholding-ranking/) 
+* Read main post and look over comments of [Andrew Gelman's Blog Post](https://statmodeling.stat.columbia.edu/2018/06/21/answering-question-predictors-important-going-beyond-p-value-thresholding-ranking/) \
+
+LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gsZPdT3AB1V8EY-Dfr56Yq) 
+* Watch 10.1 on 2VU 
+* 10.2 - [Slides PDF](./10.2_study_setup.pdf) - [Paper PDF](./behara_nain_2020.pdf)
+* 10.3 - [Slides PDF](./10.3_study_results.pdf) - [Paper PDF](./behara_nain_2020.PDF)
+* 10.4 - [Slides PDF](./10.4_cross_validation_classification_setup.pdf) - [Paper PDF](./kiss_et_al_2019.PDF)
+* 10.5 - [Slides PDF](./10.5_cross_validation_classification_results.pdf) - [Paper PDF](./kiss_et_al_2019.PDF)
+* Watch 10.6 on 2VU
+* Paper for in-class/sync work: [Delen 2011](./delen_2011.pdf)
 <!--- These need to be added to the dataset repository next term  --->
 
 ### Datasets for the Semester     
@@ -49,8 +60,8 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 | [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 61: 09/14/22 |Section 60: 09/15/22 |
 | [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Mods2_3_starter.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Mods2_3_starter.pdf) | Section 61: 09/28/22 |Section 60: 09/29/22 |
 | [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd); [Problem Set 3 pdf](./problem-sets/03_ProblemSet_starter.pdf) | Section 61: 10/19/22 |Section 60: 10/20/22 |
-| [Problem Set 4 placeholder]<!---(https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/04_ProblemSet_Mod8_starter_updated.Rmd)--->; [Problem Set 4 placeholder]<!---(./problem-sets/04_ProblemSet_Mod8_starter_updated.pdf)---> | Section 61: 11/09/22 |Section 60: 11/10/22 |
-| [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: 12/07/22 |Section 60: 12/08/22 |
+| [Problem Set 4 DOCX](./problem_sets/Problem_Set_4.docx)| Section 61: 11/09/22 |Section 60: 11/10/22 |
+| [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: DROPPED |Section 60: DROPPED |
 
 ### Final Project Materials
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
