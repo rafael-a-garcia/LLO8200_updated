@@ -3,7 +3,7 @@ This is the course website for LLO 8200, Introduction to Data Science. This site
 
 You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Garcia_LLO8200_syllabus_fall2022](./Garcia_LLO8200_syllabus_fall2022.pdf). 
 
-*
+* [Updated Schedule (November 2) PDF](./ScheduleUpdateNov.pdf)
 
 If you want to set up email alerts for updates/additions to this site, you can use the free version of a third-party program: [Distill](https://distill.io/). The free version will check for updates every six hours and send you alerts. Note: this is a platform that is not owned by Vanderbilt or me and you should review their data privacy and security to ensure you are comfortable with their practices.
 
@@ -29,9 +29,9 @@ LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - C
 LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gsZPdT3AB1V8EY-Dfr56Yq) 
 * Watch 10.1 on 2VU 
 * 10.2 - [Slides PDF](./10.2_study_setup.pdf) - [Paper PDF](./behara_nain_2020.pdf)
-* 10.3 - [Slides PDF](./10.3_study_results.pdf) - [Paper PDF](./behara_nain_2020.PDF)
-* 10.4 - [Slides PDF](./10.4_cross_validation_classification_setup.pdf) - [Paper PDF](./kiss_et_al_2019.PDF)
-* 10.5 - [Slides PDF](./10.5_cross_validation_classification_results.pdf) - [Paper PDF](./kiss_et_al_2019.PDF)
+* 10.3 - [Slides PDF](./10.3_study_results.pdf) - [Paper PDF](./behara_nain_2020.pdf)
+* 10.4 - [Slides PDF](./10.4_cross_validation_classification_setup.pdf) - [Paper PDF](./kiss_et_al_2019.pdf)
+* 10.5 - [Slides PDF](./10.5_cross_validation_classification_results.pdf) - [Paper PDF](./kiss_et_al_2019.pdf)
 * Watch 10.6 on 2VU
 * Paper for in-class/sync work: [Delen 2011](./delen_2011.pdf)
 <!--- These need to be added to the dataset repository next term  --->
