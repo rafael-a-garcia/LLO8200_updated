@@ -1,20 +1,22 @@
 ## Data Science (LLO8200)
 This is the course website for LLO 8200, Introduction to Data Science. This site serves as a supplement to the 2VU LMS site. Make sure you bookmark and check this page frequently for the most up-to-date files to use for both async and problem sets. Over the course of the term code may be optimized or corrected. I will upload updated files here when that happens. You should have R, RStudio, and the tidyverse package installed and updated prior to the first day of class. Instructions for installing/updating R and Rstudio can be found [here](./refs/Downloading Installing Updating R and RStudio.pdf).
 
-You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Garcia_LLO8200_syllabus_fall2022](./Garcia_LLO8200_syllabus_fall2022.pdf). 
+You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Garcia_LLO8200_syllabus_fall2022](./Garcia_LLO8200_syllabus_Spring2023.pdf). 
 
-* [Updated Schedule (November 2) PDF](./ScheduleUpdateNov.pdf)
+* [ Schedule (Jan 08) PDF](./Schedule 01-08-2023.pdf)
 
 If you want to set up email alerts for updates/additions to this site, you can use the free version of a third-party program: [Distill](https://distill.io/). The free version will check for updates every six hours and send you alerts. Note: this is a platform that is not owned by Vanderbilt or me and you should review their data privacy and security to ensure you are comfortable with their practices.
 
 ### Async/Sync RStudio (.Rmd) Files
-I will upload .Rmd files here in weeks that code has been optimized/updated. You should check here weekly to see if there is updated code before completing your async. If you don't see an .Rmd file for a given week, the file on the LMS is current. The first file below (LMS Mod 0) is the file we use for our bootcamp meeting. The R Setup Slide Deck includes good information on R/Rstudio structure and some troubleshooting tips. Reference these if you experience errors (particularly with knitting).      
+I will upload .Rmd files here in weeks that code has been optimized/updated. You should check here weekly to see if there is updated code before completing your async. Do not use any .Rmd files that were downloaded from the LMS. The first file below (LMS Mod 0) is the file we used for our bootcamp meeting. The R Setup Slide Deck includes good information on R/Rstudio structure and some troubleshooting tips. Reference these if you experience errors (particularly with knitting).      
 
 *Note: To access and save RMD files from this site to your computer, access the link using: (Mac) ctrl+click or (PC) right click. Then click "save link as" and save to a folder on your computer (NOT the downloads folder).*
            
 LMS Mod 0 - [.Rmd Bootcamp File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/00_Getting Started.Rmd), [Bootcamp knit lecture notes](./modules/00_Getting-Started.html), [R Setup Slide Deck](./modules/Intro to R_final.pptx)\
-LMS Mod 1 - no updates \
-LMS Mod 2 - no updates \
+LMS Mod 1 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/01_Introduction.Rmd), [html Knit](./modules/01_Introduction.html), \
+LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html), \
+
+ {% comment %} 
 LMS Mod 3 - [Updated .Rmd file | 08/22/22](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod3_webscraping_updated.Rmd)\
 LMS Mod 4 - no updates \
 LMS Mod 5 - no updates \
@@ -34,12 +36,12 @@ LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here
 * 10.5 - [Slides PDF](./10.5_cross_validation_classification_results.pdf) - [Paper PDF](./kiss_et_al_2019.pdf)
 * Watch 10.6 on 2VU
 * Paper for in-class/sync work: [Delen 2011](./delen_2011.pdf)
+{% endcomment %}
 <!--- These need to be added to the dataset repository next term  --->
 
 ### Datasets for the Semester     
-*these are all available on the LMS - if we need to add any this term, I'll put them here*  
-[LMS Mod 6 - area dataset](./datasets/area_data.Rdata)\
-[PS4 - CVDD dataset](./datasets/cvdd.rdata)
+*This collection contains two datasets not found on the LMS as of Jan 10. Any additional datasets will be added when needed.*  
+[All data files as of Jan 08, 2023](./datasets/datasets_files.zip)
 <!--- These need to be added to the dataset repository next term --->
 
 ### Problem Sets
@@ -57,18 +59,18 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 
 | File(s)      | Due Date            |                     |
 |:-------------|:--------------------|:--------------------|
-| [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 61: 09/14/22 |Section 60: 09/15/22 |
-| [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Mods2_3_starter.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Mods2_3_starter.pdf) | Section 61: 09/28/22 |Section 60: 09/29/22 |
-| [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_starter.Rmd); [Problem Set 3 pdf](./problem-sets/03_ProblemSet_starter.pdf) | Section 61: 10/19/22 |Section 60: 10/20/22 |
-| [Problem Set 4 DOCX](./problem-sets/Problem_Set_4.docx)| Section 61: 11/09/22 |Section 60: 11/10/22 |
-| [Problem Set 5 placeholder];[Problem Set 5 placeholder] | Section 61: DROPPED |Section 60: DROPPED |
+| [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 60: Feb 1 |Section 61-62: Feb 2 |
+| [Problem Set 2 placeholder]<!--- (https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Mods2_3_starter.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Mods2_3_starter.pdf)---> | Section 60: Feb 15 |Section 61-62: Feb 16 |
+| [Problem Set 3 placeholder]| Section 60: Mar 1 |Section 61-62: Mar 2 |
+| [Problem Set 4 placeholder]| Section 60: Mar 29 |Section 61-62: Mar 30 |
+| [Problem Set 5 placeholder]| Section 60: Apr 19 |Section 61-62: Apr 20 |
 
 ### Final Project Materials
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
-* [Final Project Rubrics](./final-project/Final Project Grader Report.pdf) - final products due Both Sections: 12/16/22 (by midnight Pacific Time)
-* [Progress Report 1 Instructions](./final-project/Progress Report 1 - Instructions.pdf) - due Section 61: 09/21/22 / Section 60: 09/22/22
-* [Progress Report 2 Instructions](./final-project/Progress Report 2 - Instructions.pdf) - due Section 61: 10/26/22 / Section 60: 10/27/22
-* [Progress Report 3 Instructions](./final-project/Progress Report 3 - Instructions.pdf) - due Section 61: 11/16/22 / Section 60: 11/17/22
+* [Final Project Rubrics](./final-project/Final Project Grader Report.pdf) - final products due All Sections: May 1, 2023 (by midnight Pacific Time)
+* [Progress Report 1 Instructions](./final-project/Progress Report 1 - Instructions.pdf) - due Section 60: Feb 8 / Section 61-62: Feb 9
+* [Progress Report 2 Instructions](./final-project/Progress Report 2 - Instructions.pdf) - due Section 60: Mar 8 / Section 61-62: Mar 9
+* [Progress Report 3 Instructions](./final-project/Progress Report 3 - Instructions.pdf) - due Section 60: Apr 5 / Section 61-62: Apr 6
 * [Tips to help with Final Report .Rmd file](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/final-project/TipsToHelpWithFinalReport.Rmd); [associated knit PDF](./final-project/TipsToHelpWithFinalReport.pdf)
 
 #### Final Project Examples
