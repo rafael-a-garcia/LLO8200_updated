@@ -1,7 +1,7 @@
 ## Data Science (LLO8200)
 This is the course website for LLO 8200, Introduction to Data Science. This site serves as a supplement to the 2VU LMS site. Make sure you bookmark and check this page frequently for the most up-to-date files to use for both async and problem sets. Over the course of the term code may be optimized or corrected. I will upload updated files here when that happens. You should have R, RStudio, and the tidyverse package installed and updated prior to the first day of class. Instructions for installing/updating R and Rstudio can be found [here](./refs/Downloading Installing Updating R and RStudio.pdf).
 
-You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Garcia_LLO8200_syllabus_fall2022](./Garcia_LLO8200_syllabus_Spring2023.pdf). 
+You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Syllabus Spring 2023 Jan 08 Updated](./Garcia_LLO8200_syllabus_Spring2023.pdf). 
 
 * [ Schedule (Jan 08) PDF](./Schedule 01-08-2023.pdf)
 
@@ -13,8 +13,8 @@ I will upload .Rmd files here in weeks that code has been optimized/updated. You
 *Note: To access and save RMD files from this site to your computer, access the link using: (Mac) ctrl+click or (PC) right click. Then click "save link as" and save to a folder on your computer (NOT the downloads folder).*
            
 LMS Mod 0 - [.Rmd Bootcamp File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/00_Getting Started.Rmd), [Bootcamp knit lecture notes](./modules/00_Getting-Started.html), [R Setup Slide Deck](./modules/Intro to R_final.pptx)\
-LMS Mod 1 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/01_Introduction.Rmd), [html Knit](./modules/01_Introduction.html), \
-LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html), \
+LMS Mod 1 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/01_Introduction.Rmd), [html Knit](./modules/01_Introduction.html) \
+LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html)
 
  {% comment %} 
 LMS Mod 3 - [Updated .Rmd file | 08/22/22](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod3_webscraping_updated.Rmd)\
@@ -41,6 +41,7 @@ LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here
 
 ### Datasets for the Semester     
 *This collection contains two datasets not found on the LMS as of Jan 10. Any additional datasets will be added when needed.*  
+
 [All data files as of Jan 08, 2023](./datasets/datasets_files.zip)
 <!--- These need to be added to the dataset repository next term --->
 
