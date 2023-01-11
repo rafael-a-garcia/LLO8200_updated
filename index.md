@@ -1,3 +1,6 @@
+---
+title: "LLO8200 Supplemental Page"
+---
 ## Data Science (LLO8200)
 This is the course website for LLO 8200, Introduction to Data Science. This site serves as a supplement to the 2VU LMS site. Make sure you bookmark and check this page frequently for the most up-to-date files to use for both async and problem sets. Over the course of the term code may be optimized or corrected. I will upload updated files here when that happens. You should have R, RStudio, and the tidyverse package installed and updated prior to the first day of class. Instructions for installing/updating R and Rstudio can be found [here](./refs/Downloading Installing Updating R and RStudio.pdf).
 
