@@ -17,11 +17,10 @@ I will upload .Rmd files here in weeks that code has been optimized/updated. You
            
 LMS Mod 0 - [.Rmd Bootcamp File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/00_Getting Started.Rmd), [Bootcamp knit lecture notes](./modules/00_Getting-Started.html), [R Setup Slide Deck](./modules/Intro to R_final.pptx)\
 LMS Mod 1 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/01_Introduction.Rmd), [html Knit](./modules/01_Introduction.html) \
-LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html)
-
+LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html) \
+LMS Mod 3 - [.Rmd file](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/03_Webscraping.Rmd), [html Knit](./modules/03_Webscraping.html) 
  {% comment %} 
-LMS Mod 3 - [Updated .Rmd file | 08/22/22](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod3_webscraping_updated.Rmd)\
-LMS Mod 4 - no updates \
+ LMS Mod 4 - no updates \
 LMS Mod 5 - no updates \
 LMS Mod 6 - [Updated .Rmd file | 08/22/22 (updates to code starting on line 244 - final code chunk)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6_regression_updated_inclass.Rmd)\
 LMS Mod 7 - [Updated .Rmd file | 08/22/22 (updates to code loading data - line 28)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6b_regression_part2.Rmd)\
