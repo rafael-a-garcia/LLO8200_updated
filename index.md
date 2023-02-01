@@ -19,10 +19,10 @@ LMS Mod 0 - [.Rmd Bootcamp File](https://raw.githubusercontent.com/rafael-a-garc
 LMS Mod 1 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/01_Introduction.Rmd), [html Knit](./modules/01_Introduction.html) \
 LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html) \
 LMS Mod 3 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/03_Webscraping.Rmd), [html Knit](./modules/03_Webscraping.html) \
-LMS Mod 4 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/04_Conditional Means.Rmd), [html Knit](./modules/04_Conditional Means.html)
+LMS Mod 4 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/04_Conditional-Means.Rmd), [html Knit](./modules/04_Conditional-Means.html) \
+LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/05_Conditional-Means-Plots.Rmd), [html Knit](./modules/05_Conditional-Means-Plots.html)
  {% comment %} 
- LMS Mod 4 - no updates \
-LMS Mod 5 - no updates \
+
 LMS Mod 6 - [Updated .Rmd file | 08/22/22 (updates to code starting on line 244 - final code chunk)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6_regression_updated_inclass.Rmd)\
 LMS Mod 7 - [Updated .Rmd file | 08/22/22 (updates to code loading data - line 28)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6b_regression_part2.Rmd)\
 LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - Classifiers.pdf)
