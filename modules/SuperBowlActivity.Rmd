@@ -1,0 +1,106 @@
+---
+title: "Super rollin' along with Conditional Means"
+author: "Garcia"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list=ls()) #this clears the global environment - if you don't want to clear your GE, then comment this code out (or delete it altogether)
+
+library(tidyverse)
+library(rvest)
+library(tigris)
+library(lubridate)
+library(readxl)
+library(yardstick)
+
+# Get File from Github
+if(file.exists("SB_R.xlsx")==FALSE){
+  download.file("https://github.com/rafael-a-garcia/LLO8200_updated/raw/main/modules/SB_R.xlsx", destfile="SB_R.xlsx", mode="wb")
+  sBowl<-read_excel("SB_R.xlsx", skip=3, col_names=TRUE)  
+  }else{
+  sBowl<-read_excel("SB_R.xlsx", skip=3, col_names=TRUE)
+}
+
+# Convert Possession time into seconds, format date so R recognizes is, Pull out year
+sBowl<-sBowl%>%
+  mutate(Possession=ms(as.character(Possession)))%>%
+  mutate(Possession=period_to_seconds(Possession))%>%
+  mutate(Date=ymd(sBowl$Date))%>%
+  mutate(Year=year(sBowl$Date))
+
+```
+| Name | Definition |
+| ------- | --------- |
+|Date | Date of Superbowl
+|SuperBowl | Number of Superbowl|
+|Team | Team that played|
+|WonGame | Whether that team won|
+|Points | How many points that team scored|
+|FirstDowns | # of first downs|
+|RushAttempts | # of Rushing attempts|
+|RushYards | # of Yards earned through Rushing|
+|RushTDs | # of Touchdowns Rushed|
+|Fumbles | # of Fumbles|
+|FumblesLost | # of Fumbles lost|
+|PassAttempts | # of Passing attempts|
+|PassCompleted | # of Completed passes|
+|PassYards | # of Yards earned through Passing|
+|PassTDs | # of Touchdowns Passed|
+|Interceptions | # of Interceptions caused|
+|TotalYards | # of Yards earned Total|
+|Possession | Total time ball was in possession|
+|HF | Whether or not the MVP went on to be a Hall of Famer|
+|City | City game took place|
+|State | State game took place|
+|Flip | Coin Flip: Heads/Tails|
+|WonFlip | Whether team won the flip|
+|Year | Year game took place|
+
+# Your Challenge:
+
+Use What you know about Conditional Means to build a model predicting the winner of the game (`WonGame`). You can create any variables you need to from this dataset (ex: you want to look at the # of Fumbles Lost per Fumble, you can mutate `Fumbles Lost` divided by `Fumbles`), but remember to watch for linear dependancy (you  shouldn't calculate the `Interceptions` per `TotalYards` AND also include `TotalYards` as a predictor). Some variables are already categorical, others will need to be `ntile`d or something else. 
+
+The group that can build the "best model" will earn 5 EC points to be awarded to the next Problem Set it can be. "Best" will be determined by the instructor and will consider: RMSE, # of predictors in the model, # of levels total. In all three of these cases: a lower number is better. Make sure to include graphs of your model's ability to predict. 
+
+
+
+```{r}
+test<-sBowl%>%
+  mutate(avg = mean(WonGame, na.rm = TRUE))%>%
+  ungroup()
+
+
+test%>%
+  rmse(WonGame, avg)
+
+#Unconditional Mean is .50
+
+test<-test%>%
+  group_by(WonFlip)%>%
+  mutate(avg_wflip = mean(WonGame, na.rm = TRUE))%>%
+  ungroup()
+
+
+test%>%
+  rmse(WonGame, avg_wflip)
+
+#Compare to unconditional mean: (New RMSE - Old RMSE)/Old RMSE
+(0.496904	-.5)/.5
+
+test<-test%>%
+  group_by(HF)%>%
+  mutate(avg_hf = mean(WonGame, na.rm = TRUE))%>%
+  ungroup()
+
+
+test%>%
+  rmse(WonGame, avg_hf)
+
+(0.4179698	-.5)/.5
+
+```
+
+**A Statistical Aside:** Strictly speaking, you wouldn't normally use the RMSE to assess the performance of a model with a binary outcome. You would usually use more traditional classification metrics like sensitivity and specificity; however, we won't be talking about those until much later. It turns out there *is* a metric for this kind of task called a Brier Score. Its calculation is functionally equivalent to the MSE when the outcome is unidimensional (as it is here). Therefore, the Brier Score is just the RMSE squared. 
