@@ -211,7 +211,8 @@ rmse_1
 The rmse of `r prettyNum(rmse_1$.estimate,digits=2)` indicates how close our prediction is to the actual value in the *testing* dataset. This is important because it gives a sense of how the model we trained performs when trying to make predictions using new-- or out of sample-- data. 
 
 
-_Quick Exercise_ Run a regression using a different predictor. Calculate rmse and see if you can beat my score. 
+#### _Quick Exercise_ 
+Run a regression using a different predictor. Calculate rmse and see if you can beat my score. 
 
 
 ## Multiple regression
@@ -230,8 +231,10 @@ library(sjPlot)
 
 cormat<-tab_corr(ad%>%select(income_75, college_educ, perc_homeown), triangle = "lower", string.diag = c("1","1","1"))
 cormat
-```
 
+```
+ \
+  
 Above we see strong correlations between our IVs and our DV. Now, let's look at the correlation between IVs. Here's where we do NOT want super high correlations. We see the correlation between `perc_homeown` & `college_educ` is only about -.2 (although that is statistically significant at the .001 level, the actual correlation magnitude is fairly low).  
 
 ### Step 2: Split the Data
