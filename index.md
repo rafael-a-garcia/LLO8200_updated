@@ -20,10 +20,12 @@ LMS Mod 1 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_upd
 LMS Mod 2 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/02_FlatData.Rmd), [html Knit](./modules/02_FlatData.html) \
 LMS Mod 3 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/03_Webscraping.Rmd), [html Knit](./modules/03_Webscraping.html) \
 LMS Mod 4 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/04_Conditional-Means.Rmd), [html Knit](./modules/04_Conditional-Means.html), [Supplement 1 - .Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/04a_Explaining-RMSE.Rmd), [Supplement 1 - html Knit](./modules/04a_Explaining-RMSE.html), [Supplement 2 - PDF](./modules/04b_Detour.pdf)\
-LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/05_Conditional-Means-Plots.Rmd), [html Knit](./modules/05_Conditional-Means-Plots.html)
+LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/05_Conditional-Means-Plots.Rmd), [html Knit](./modules/05_Conditional-Means-Plots.html)\
+LMS Mod 6 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-1.Rmd), [html Knit](./modules/06_Regression-Part-1.html)
+
  {% comment %} 
 
-LMS Mod 6 - [Updated .Rmd file | 08/22/22 (updates to code starting on line 244 - final code chunk)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6_regression_updated_inclass.Rmd)\
+
 LMS Mod 7 - [Updated .Rmd file | 08/22/22 (updates to code loading data - line 28)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6b_regression_part2.Rmd)\
 LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - Classifiers.pdf)
 * Watch 8.1 on 2VU 
