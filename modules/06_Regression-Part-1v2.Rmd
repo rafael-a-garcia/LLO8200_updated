@@ -79,6 +79,13 @@ ad%>%
 #We can also look at the five number summary (min, Q1, median Q3, Max)
 fiveIncome<-as.data.frame(fivenum(ad$income_75))
 colnames(fiveIncome)<-"five.num"
+fiveIncome
+
+#We can also get the numbers with summary
+summary(ad$income_75)
+
+summary(ad$income_75)[-4]
+
 
 #Adding to the plot just to show you the relationship (you won't need to do this in this class)
 ad%>%
