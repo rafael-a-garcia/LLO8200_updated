@@ -45,7 +45,7 @@ LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here
 <!--- These need to be added to the dataset repository next term  --->
 
 ### Datasets for the Semester     
-*This collection contains two datasets not found on the LMS as of Jan 10. Any additional datasets will be added when needed.*  
+*This collection contains datasets not found on the LMS as of Jan 08. Any additional datasets will be added when needed.*  
 
 [All data files as of Jan 08, 2023](./datasets/datasets_files.zip)\
 [Super Bowl Activity - RMD](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/SuperBowlActivity.Rmd)
