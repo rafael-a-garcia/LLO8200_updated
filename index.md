@@ -23,6 +23,7 @@ LMS Mod 4 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_upd
 LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/05_Conditional-Means-Plots.Rmd), [html Knit](./modules/05_Conditional-Means-Plots.html)\
 LMS Mod 6 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-1v2.Rmd), [html Knit](./modules/06_Regression-Part-1v2.html) - (Small update Feb 15)\
 LMS Mod 6 (Part 2)- [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-2.Rmd), [html Knit](./modules/06_Regression-Part-2.html)
+LMS Mod 7 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/07_Scatterplots.Rmd), [html Knit](./modules/07_Scatterplots.html)
  {% comment %} 
 
 
