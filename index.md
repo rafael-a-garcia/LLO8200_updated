@@ -23,17 +23,12 @@ LMS Mod 4 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_upd
 LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/05_Conditional-Means-Plots.Rmd), [html Knit](./modules/05_Conditional-Means-Plots.html)\
 LMS Mod 6 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-1v2.Rmd), [html Knit](./modules/06_Regression-Part-1v2.html) - (Small update Feb 15)\
 LMS Mod 6 (Part 2)- [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-2.Rmd), [html Knit](./modules/06_Regression-Part-2.html)\
-LMS Mod 7 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/07_Scatterplots.Rmd), [html Knit](./modules/07_Scatterplots.html)
+LMS Mod 7 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/07_Scatterplots.Rmd), [html Knit](./modules/07_Scatterplots.html)\
+LMS Mod 8 (subject to revisions) - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/08_Classifiers_v0.Rmd), [html Knit](./modules/08_Classifiers_v0.html), **Optional:** supplementary playlist on classifier (no R): [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g)
 
  {% comment %} 
 
 
-LMS Mod 7 - [Updated .Rmd file | 08/22/22 (updates to code loading data - line 28)](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/Mod6b_regression_part2.Rmd)\
-LMS Mod 8 - no code  [Slide deck - Slides for 8.2-End of 8)](./modules/Mod 8 - Classifiers.pdf)
-* Watch 8.1 on 2VU 
-* Playlist for Module 8 can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g) 
-* Chapter 4 of Numbersense [Read via Vanderbilt Library](https://catalog.library.vanderbilt.edu/view/action/uresolver.do?operation=resolveService&package_service_id=31085101990003276&institutionId=3276&customerId=3275&VE=true) 
-* Read main post and look over comments of [Andrew Gelman's Blog Post](https://statmodeling.stat.columbia.edu/2018/06/21/answering-question-predictors-important-going-beyond-p-value-thresholding-ranking/) \
 
 LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gsZPdT3AB1V8EY-Dfr56Yq) 
 * Watch 10.1 on 2VU 
