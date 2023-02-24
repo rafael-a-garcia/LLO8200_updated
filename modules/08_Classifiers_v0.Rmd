@@ -1,0 +1,394 @@
+---
+title: "Using Classification (Logistic Regression) for Prediction"
+output:
+    html_document: 
+        theme: cerulean
+---
+
+Classification is the process of predicting group membership. Understanding which individuals are likely to be members of which groups is a key task for data scientists. For instance, most recommendation engines that are at the heart of consumer web sites are based on classification algorithms, predicting which consumers are likely to purchase which products. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Pizza
+
+Today we'll be working with the pizza dataset, which comes from the subreddit random acts of pizza. Each line represents a post to this subreddit. We have various characteristics of these posts, along with the request text from the post itself. We'll use these characteristics of the posts to predict whether or not the poster received pizza. This lesson is inspired by [this article](http://www.aaai.org/ocs/index.php/ICWSM/ICWSM14/paper/download/8106/8101)
+
+```{r libraries}
+library(knitr)
+library(tidyverse)
+library(modelr)
+library(yardstick)
+library(tidymodels)
+library(probably)
+```
+
+```{r}
+load("za.Rdata")
+
+za$gotpiz_factor<-as.factor(za$got_pizza)
+za$karma<-as.character(za$karma)
+za$karma<-as.numeric(za$karma)
+```
+
+| name  | Description   |
+|---|---|
+| got_pizza | Did the person who posted get pizza? 1=Yes, 0=No   |
+| got_pizza_f | Did the person who posted get pizza "Yes" or "No" (factor)   |
+| karma | The redditor's total upvotes on Reddit.   |
+| age | How long has the user been on Reddit (in days).   |
+| raop_age | How long has the user been posting on Random Acts of Pizza (raop) (in days).    |
+| pop_request | How popular was this request?   |
+| activity | How many comments for this request?  |
+| total_posts | How many times has the user posted on Reddit?   |
+| raop_posts | How many times has the user posted on Random Acts of Pizza?   |
+| prev_raop_post | Has the person posted previously on the subreddit?   |
+| words | Number of words in the request   |
+| poor | Word "poor" appears in the post |
+| student | Word "student" appears in the post |
+| grateful | Word "grateful" appears in the post |
+| score | Sentiment score, more positive words+, more negative words - |
+
+```{r}
+#Let's examine our dataset summary
+summary(za)
+#take note of the missing data - if data is missing on key variables, we may want to omit this data from our descriptive statistics plots/tables
+```
+
+
+## Conditional Means as a Classifier
+
+We'll start by generating some cross tabs and some quick plots, showing the probability of receiving pizza according to several characteristics of the post.  We start with a basic crosstab of the dependent variable. We use `prop.table` to change this from raw counts to proportions. I also provide a brief example of how to do a table using the `kable` function. 
+```{r descriptives}
+#Crosstabs
+za%>%
+  count(got_pizza)%>% # Count numbers getting pizza
+  mutate(p=prop.table(n))%>% #mutate for proportions using prop.table
+  kable(format="markdown") # output to table
+
+#Note - here's a place where I don't want NAs included. I want my proportions to be calculated from my VALID N (the non-missing data), so I'm going to filter out missing and then re-run my table:
+za%>%
+  filter(!is.na(got_pizza))%>%
+  count(got_pizza)%>% # Count numbers getting pizza
+  mutate(p=prop.table(n))%>% #mutate for proportions using prop.table
+  kable(format="markdown") # output to table
+
+#because there isn't very much missingness on my got_pizza var (only 3 missing values), my proportions don't change all that much - but these are more accurate. I'm going to filter out missing for all future plots
+
+exampledata<-za%>%
+  filter(!is.na(got_pizza))
+```
+
+So, about 75% of the sample didn't get pizza, about 25% did. 
+
+Next, we cross-tabulate receiving pizza with certain terms. First, if the request mentioned the word "student."
+
+```{r}
+za%>%
+  filter(!is.na(got_pizza))%>%
+  group_by(student, got_pizza)%>%
+  summarize(n=n())%>%
+  mutate(prop=n/sum(n))%>%
+  subset(select=c("student","got_pizza","prop"))%>%
+  spread(got_pizza,prop)%>%
+  kable()
+
+za%>%
+  group_by(student)%>%
+  summarize(mean_gp=mean(got_pizza, na.rm=T))
+```
+
+Next, if the request mentioned the word "grateful."
+
+```{r}
+za%>%
+  filter(!is.na(got_pizza))%>%
+  group_by(grateful, got_pizza)%>%
+  summarize(n=n())%>%
+  mutate(prop=n/sum(n))%>%
+  subset(select=c("grateful","got_pizza","prop"))%>%
+  spread(got_pizza,prop)%>%
+  kable()
+
+#ad in crosstab with poor
+za%>%
+  filter(!is.na(got_pizza))%>%
+  group_by(poor, got_pizza)%>%
+  summarize(n=n())%>%
+  mutate(prop=n/sum(n))%>%
+  subset(select=c("poor","got_pizza","prop"))%>%
+  spread(got_pizza, prop)%>%
+  kable()
+```
+
+Crosstabs using binary data are equivalent to generating conditional means, as shown below. 
+
+```{r conditional_means}
+#Predictions using conditional means
+za%>%
+  group_by(grateful)%>%
+  summarize(mean(got_pizza, na.rm=T)) #the na.rm removes any missing on our got_pizza var, so I didn't bother filtering it out like I did above when I was calculating the means "by hand"
+```
+
+We can also use conditional means to get proportions for very particular sets of characteristics. In this case, what about individuals who included some combination of the terms "grateful","student" and "poor" in their posts? 
+
+```{r}
+za%>%
+  group_by(grateful, student)%>%
+  summarize(mean_pizza=mean(got_pizza, na.rm=T))%>%
+  arrange(-mean_pizza)
+
+za_sum<-za%>%
+  group_by(grateful, student, poor)%>%
+  summarize(mean_pizza=mean(got_pizza, na.rm=T))%>%
+  arrange(-mean_pizza)
+
+kable(za_sum)
+```
+
+## Probability of Receiving Pizza, Using Various Terms in Post
+```{r}
+gg<-ggplot(za_sum, aes(x=grateful, y=mean_pizza, fill=grateful)) +
+  geom_bar(stat="identity") +
+  facet_wrap(~student + poor)
+gg
+```
+
+
+## Logistic regression as a classifier
+
+Logistic regression is set up to handle binary outcomes as the dependent variable. The downside to logistic regression is that it is modeling the log odds of the outcome, which means all of the coefficients are expressed as log odds, which no one understands intuitively. 
+
+We're going to use the "tidymodels" approach to running this model, which works much better for a standard data science workflow. It begins with splitting the data into testing and training datasets using the `initial_split` function.  
+
+```{r}
+# Training and testing datasets
+#before I split these, I'm going to go ahead and drop the 3 observations that are missing on my outcome variable - got pizza; this way I won't chance having all three missing in one of my datasets. While 3 observations really aren't going to throw anything way off - I know they're not going to be included in my analyses, so I'm dropping them. 
+za<-za%>%
+  filter(!is.na(got_pizza))
+
+set.seed(1025)
+
+za_split<-initial_split(za, prop=.5)
+
+za_train<-training(za_split)
+
+za_test<-testing(za_split)
+```
+
+Next we set up the terms of the model.
+```{r model formula}
+# Model terms
+za_formula<-as.formula("got_pizza_f ~
+             age + 
+             karma +
+             total_posts +
+             raop_posts +
+             student +
+             grateful +
+             pop_request +
+             score")
+```
+
+Next we'll set up the recipe.  Notice the use of a log function for total posts, which follow a classic exponential distribution. We use `offset=1` to  avoid attempting to take the log of 0 (which is undefined).  
+
+```{r}
+logit_rec<-recipe(za_formula, data=za)%>%
+  step_log(total_posts, offset = 1)
+```
+
+```{r}
+#what do we mean by exponential function? Plot it and see!
+gg<-ggplot(za, aes(x=total_posts))+
+  geom_density()
+gg
+```
+
+Now we're going to run the model. This approach is a little different than what we've been using up until now. We're going to create a `logit_mod` object by fitting a logistic regression to our outcome. The `set_engine` function says what particular kind of logistic regression we want to fit-- in this case we want to do classification (or "glm").
+
+```{r}
+logit_mod <- 
+  logistic_reg() %>% 
+  set_engine("glm")%>%
+  set_mode("classification")
+```
+
+## Put the workflow together
+```{r}
+logit_wf<-workflow()%>%
+  add_recipe(logit_rec)%>%
+  add_model(logit_mod)
+```
+
+```{r}
+#fit the model to the training dataset
+logit_results<-fit(logit_wf, data=za_train)
+```
+
+```{r}
+logit_results%>%
+  tidy()
+```
+
+```{r}
+#SUPPLEMENTAL code for producing a prettier (IMO, more easily understood) table
+library(gtsummary) #we will take advantage of the gtsummary package (https://www.danieldsjoberg.com/gtsummary/index.html)
+
+tbl_regression(logit_results, exponentiate=T, intercept=T)%>% #note: ONLY use exponentiate when your outcome is binary (not continuous)
+    bold_p() %>%
+  bold_labels() %>% 
+  italicize_levels()%>%
+    as_flex_table()
+```
+
+With these results in hand we can generate predicted classifications. 
+
+We can convert the predictions to a binary variable by setting a "threshold" of .5. Any prediction above .5 is considered to be a 1, anything below, a 0. We'll compare the actual "truth" of whether or not someone got a pizza with our prediction from the model using what's called a "confusion matrix" (really). 
+
+```{r}
+logit_results%>%
+  predict(za_test)%>%
+  bind_cols(za_test)%>%
+  conf_mat(truth=got_pizza_f, estimate=.pred_class)
+```
+
+We're usually interested in three things: the overall accuracy of a classification is the proportion of cases accurately classified. The sensitivity is the proportion of "ones" that are accurately classified as ones-- it's the probability that a case classified as positive will indeed be positive. Specificity is the probability that a case classified as 0 will indeed be 0. 
+
+
+## Accuracy: proportion correctly identifed
+```{r}
+logit_results%>%
+  predict(za_test)%>%
+  dplyr::bind_cols(za_test)%>%
+  metrics(truth=got_pizza_f, estimate=.pred_class)
+```
+
+## Sensitivity, probability of saying it's a "yes" when it's really a "yes" (true positive)
+```{r}
+logit_results%>%
+  predict(za_test)%>%
+  bind_cols(za_test)%>%
+ sens(truth=got_pizza_f, estimate=.pred_class, event_level="second")
+```
+
+## Specificity, probability of saying it's a "No" when it's really a "No" (true negative)
+```{r}
+logit_results%>%
+  predict(za_test)%>%
+  bind_cols(za_test)%>%
+  spec(truth=got_pizza_f, estimate=.pred_class, event_level="second")
+```
+
+*Question: how do you get perfect specificity? How do you get perfect sensitivity?*
+
+
+***END OF WEEK 1 CODE***
+
+## Thresholds
+
+As we vary the threshold from 0 to 1, the sensitivity will decrease, while the specificity will increase. The best models will be able to have both high sensitivity and specificity at a threshold. The code below shows what happens to sensitivity and specificity as thresholds go from 0 to 1. 
+
+```{r}
+#adding code from below here - I want to save my predictions as a dataset, so we can look at it (and I want to do it here rather than later in my code):
+logit_final<-last_fit(logit_wf, za_split)
+predictions<-as.data.frame(logit_final$.predictions) #save predictions as dataset
+
+th<-logit_results%>%
+  predict(za_test, type="prob")%>%
+  bind_cols(za_test)%>%
+   threshold_perf(truth=got_pizza_f,
+                 estimate=.pred_Yes,
+                 thresholds=seq(0, 1, by=.1), metrics=c("sens","spec"))
+
+ggplot(filter(th, .metric%in%c("sens", "spec")),
+       aes(x=.threshold, y=.estimate, color=.metric))+
+  geom_line()
+```
+
+
+## Area Under the Curve (AUC)
+
+The area under the curve considers both the sensitivity (does the model accurately predict every positive outcome) with the specificity (does the model accurately predict every negative outcome) for a given model, and does so across every possible threshold value. 
+
+```{r}
+logit_results%>%
+  predict(za_test, type="prob")%>%
+  bind_cols(za_test)%>%
+  roc_auc(truth=got_pizza_f, .estimate=.pred_Yes, event_level="second")
+#ROC - receiver operating characteristic
+```
+We got an ROC of .591. Our goal would be at least .7; so our model clearly isn't doing a great job of balancing sens/spec (which we already knew). 
+
+```{r}
+logit_results%>%
+  predict(za_test,type="prob")%>%
+  bind_cols(za_test)%>%
+  roc_curve(truth=got_pizza_f, .estimate=.pred_Yes, event_level="second")%>%
+  autoplot()
+```
+[Here's a nice visual to aid in interpreting these plots:](https://en.wikipedia.org/wiki/Receiver_operating_characteristic#/media/File:Roc-draft-xkcd-style.svg)
+
+
+## Use "last fit" to get same results on our logit_final object.
+```{r}
+#I moved the next two lines of code up to the beginning of this week's file so that we could examine the predictions. Commenting them out here.
+
+#logit_final<-last_fit(logit_wf, za_split)
+#predictions<-as.data.frame(logit_final$.predictions) #save predictions as dataset
+
+logit_final$.metrics
+```
+On a scale of 1 to 100, our model is scoring about a 60 (not all that good). 
+
+
+# Plotting results from logistic regression
+
+Because individual coefficients are so hard to understand, most of the time we convert the results to predicted probabilities, using a range of hypothetical values, as in the code below. 
+```{r}
+hypo_data<-za_train%>%
+  data_grid(
+    age=mean(age, na.rm=TRUE),
+    karma=as.integer(mean(karma, na.rm=TRUE)),
+    total_posts=as.integer(mean(total_posts, na.rm=TRUE)),
+    raop_posts=as.integer(seq_range(raop_posts, n=100)),
+    student=as_factor(levels(student)),
+    grateful=as_factor(levels(grateful)[1]),
+    pop_request=as.integer(mean(pop_request, na.rm=TRUE)),
+    score=mean(score, na.rm=TRUE)
+)
+
+plot_data<-logit_results%>%
+  predict(hypo_data, type="prob")%>%
+  bind_cols(hypo_data)%>%
+  rename(`Post Includes "Student"`=student)
+
+plot_data%>%
+ggplot(aes(x=raop_posts, y=.pred_Yes, color=`Post Includes "Student"`))+
+  geom_line()+
+  xlab("Number of Posts on RAOP")+
+  ylab("Prob(Pizza)")
+```
+
+
+# What if I want to modify my threshold to attempt to get a more balanced sensitivity and specificity? 
+```{r}
+#first - I want to change my predicted class values
+predictions$.pred_class2=ifelse(predictions$.pred_Yes>.24,"Yes","No") #modify threshold to .24
+
+table(predictions$got_pizza_f, predictions$.pred_class2) #examine new confusioinst matrix
+
+#note, I'm just calculating these "by hand" here
+#accuracy - how many obs did we predict correctly? 
+(1408+317)/(1408+388+715+317) #our accuracy went down -- how come? 
+
+#sensitivity - the number of correct positive (YESs) predictions divided by the total number of actual positives
+317/(317+388) #we got better sensitivity here
+
+#specificity - the number of correct negative (NOs) predictions divided by the total number of actual negatives
+1408/(1408+715) #but we had to sacrifice some specificity
+```
+
+
+
+
