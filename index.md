@@ -24,7 +24,7 @@ LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_upd
 LMS Mod 6 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-1v2.Rmd), [html Knit](./modules/06_Regression-Part-1v2.html) - (Small update Feb 15)\
 LMS Mod 6 (Part 2)- [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-2.Rmd), [html Knit](./modules/06_Regression-Part-2.html)\
 LMS Mod 7 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/07_Scatterplots.Rmd), [html Knit](./modules/07_Scatterplots.html)\
-LMS Mod 8 (subject to revisions) - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/08_Classifiers_v0.Rmd), [html Knit](./modules/08_Classifiers_v0.html), **Optional:** supplementary playlist on classifier (no R): [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g)
+LMS Mod 8 (subject to revisions) - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/08_Classifiers_v1.Rmd), [html Knit](./modules/08_Classifiers_v1.html), **Optional:** supplementary playlist on classifier (no R): [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g)
 
  {% comment %} 
 
