@@ -24,7 +24,7 @@ LMS Mod 5 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_upd
 LMS Mod 6 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-1v2.Rmd), [html Knit](./modules/06_Regression-Part-1v2.html) - (Small update Feb 15)\
 LMS Mod 6 (Part 2)- [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/06_Regression-Part-2.Rmd), [html Knit](./modules/06_Regression-Part-2.html)\
 LMS Mod 7 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/07_Scatterplots.Rmd), [html Knit](./modules/07_Scatterplots.html)\
-LMS Mod 8 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/08_Classifiers_v1.Rmd), [html Knit](./modules/08_Classifiers_v1.html), **Optional:** supplementary playlist on classifier (no R): [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g)
+LMS Mod 8 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/08_Classifiers_v2.Rmd), [html Knit](./modules/08_Classifiers_v2.html), **Optional:** supplementary playlist on classifier (no R): [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g)
 
  {% comment %} 
 
@@ -67,7 +67,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 | [Problem Set 1 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/01_ProblemSet_Mods1_2_3_starter.Rmd); [Problem Set 1 pdf](./problem-sets/01_ProblemSet_Mods1_2_3_starter.pdf) | Section 60: Feb 1 |Section 61-62: Feb 2 |
 | [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Sp2023.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Sp2023.pdf) | Section 60: Feb 15 |Section 61-62: Feb 16 |
 | [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_Sp2023.Rmd); [Problem Set 3 pdf](./problem-sets/03_ProblemSet_Sp2023.pdf)| Section 60: Mar 1 |Section 61-62: Mar 2 |
-| [Problem Set 4 placeholder]| Section 60: Mar 29 |Section 61-62: Mar 30 |
+| [Problem Set 4 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_Sp2023.Rmd); [Problem Set 4 pdf](./problem-sets/04_ProblemSet_Sp2023.pdf) | Section 60: Mar 29 |Section 61-62: Mar 30 |
 | [Problem Set 5 placeholder]| Section 60: Apr 19 |Section 61-62: Apr 20 |
 
 ### Final Project Materials
