@@ -4,9 +4,9 @@ title: "LLO8200 Supplemental Page"
 ## Data Science (LLO8200)
 This is the course website for LLO 8200, Introduction to Data Science. This site serves as a supplement to the 2VU LMS site. Make sure you bookmark and check this page frequently for the most up-to-date files to use for both async and problem sets. Over the course of the term code may be optimized or corrected. I will upload updated files here when that happens. You should have R, RStudio, and the tidyverse package installed and updated prior to the first day of class. Instructions for installing/updating R and Rstudio can be found [here](./refs/Downloading Installing Updating R and RStudio.pdf).
 
-You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Syllabus Spring 2023 Jan 08 Updated](./Garcia_LLO8200_syllabus_Spring2023.pdf). 
+You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Syllabus Spring 2023 Mar 08 Updated](./Garcia_LLO8200_syllabus_Spring2023.pdf). 
 
-* [ Schedule (Jan 08) PDF](./Schedule 01-08-2023.pdf)
+* [ Schedule (March 08) PDF](./Schedule 03-08-2023.pdf)
 
 If you want to set up email alerts for updates/additions to this site, you can use the free version of a third-party program: [Distill](https://distill.io/). The free version will check for updates every six hours and send you alerts. Note: this is a platform that is not owned by Vanderbilt or me and you should review their data privacy and security to ensure you are comfortable with their practices.
 
@@ -26,10 +26,6 @@ LMS Mod 6 (Part 2)- [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO
 LMS Mod 7 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/07_Scatterplots.Rmd), [html Knit](./modules/07_Scatterplots.html)\
 LMS Mod 8 - [.Rmd](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/modules/08_Classifiers_v2.Rmd), [html Knit](./modules/08_Classifiers_v2.html), **Optional:** supplementary playlist on classifier (no R): [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gR0bdsgD2WYRYZzcqpH52g)
 
- {% comment %} 
-
-
-
 LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here: [YouTube](https://youtube.com/playlist?list=PLgM_PEP2Xv8gsZPdT3AB1V8EY-Dfr56Yq) 
 * Watch 10.1 on 2VU 
 * 10.2 - [Slides PDF](./10.2_study_setup.pdf) - [Paper PDF](./behara_nain_2020.pdf)
@@ -38,6 +34,7 @@ LMS Mod 10 - no code; Playlist for Module 10 videos not on 2VU can be found here
 * 10.5 - [Slides PDF](./10.5_cross_validation_classification_results.pdf) - [Paper PDF](./kiss_et_al_2019.pdf)
 * Watch 10.6 on 2VU
 * Paper for in-class/sync work: [Delen 2011](./delen_2011.pdf)
+ {% comment %} 
 {% endcomment %}
 <!--- These need to be added to the dataset repository next term  --->
 
@@ -68,7 +65,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 | [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Sp2023.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Sp2023.pdf) | Section 60: Feb 15 |Section 61-62: Feb 16 |
 | [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_Sp2023.Rmd); [Problem Set 3 pdf](./problem-sets/03_ProblemSet_Sp2023.pdf)| Section 60: Mar 1 |Section 61-62: Mar 2 |
 | [Problem Set 4 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_Sp2023.Rmd); [Problem Set 4 pdf](./problem-sets/04_ProblemSet_Sp2023.pdf) | Section 60: Mar 29 |Section 61-62: Mar 30 |
-| [Problem Set 5 placeholder]| Section 60: Apr 19 |Section 61-62: Apr 20 |
+| ~~[Problem Set 5 placeholder]| Section 60: Apr 19 |Section 61-62: Apr 20 ~~|
 
 ### Final Project Materials
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
