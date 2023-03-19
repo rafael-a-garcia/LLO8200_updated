@@ -6,7 +6,7 @@ This is the course website for LLO 8200, Introduction to Data Science. This site
 
 You are responsible for reviewing and ensuring you are following the schedule included in this semester's syllabus. The most up-to-date syllabus can always be found here and I will update the date when changes are made: [Syllabus Spring 2023 Mar 08 Updated](./Garcia_LLO8200_syllabus_Spring2023.pdf). 
 
-* [ Schedule (March 08) PDF](./Schedule 03-08-2023.pdf)
+* [ Schedule (March 19) PDF](./Schedule 03-19-2023.pdf)
 
 If you want to set up email alerts for updates/additions to this site, you can use the free version of a third-party program: [Distill](https://distill.io/). The free version will check for updates every six hours and send you alerts. Note: this is a platform that is not owned by Vanderbilt or me and you should review their data privacy and security to ensure you are comfortable with their practices.
 
