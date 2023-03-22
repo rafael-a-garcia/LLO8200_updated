@@ -65,7 +65,7 @@ All problem sets are graded on a 100-point scale. Corrections can be submitted f
 | [Problem Set 2 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/02_ProblemSet_Sp2023.Rmd); [Problem Set 2 pdf](./problem-sets/02_ProblemSet_Sp2023.pdf) | Section 60: Feb 15 |Section 61-62: Feb 16 |
 | [Problem Set 3 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/03_ProblemSet_Sp2023.Rmd); [Problem Set 3 pdf](./problem-sets/03_ProblemSet_Sp2023.pdf)| Section 60: Mar 1 |Section 61-62: Mar 2 |
 | [Problem Set 4 .Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200_updated/main/problem-sets/04_ProblemSet_Sp2023.Rmd); [Problem Set 4 html](./problem-sets/04_ProblemSet_Sp2023.html) | Section 60: Mar 29 |Section 61-62: Mar 30 |
-| ~~[Problem Set 5 placeholder]| Section 60: Apr 19 |Section 61-62: Apr 20 ~~|
+| ~~[Problem Set 5 placeholder]~~| ~~Section 60: Apr 19~~ |~~Section 61-62: Apr 20 ~~|
 
 ### Final Project Materials
 * [Final Project Expectations](./final-project/Expectations for final presentation and report.pdf) 
